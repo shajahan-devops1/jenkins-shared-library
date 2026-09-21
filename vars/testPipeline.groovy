@@ -11,6 +11,7 @@ def call (Map configMap) {
                     echo 'This is a test pipeline.'
                     echo "Project: ${project}"
                     echo "Component: ${component}"
+                    sh 'printenv | sort'
                 }
             }
         }
